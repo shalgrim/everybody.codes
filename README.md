@@ -39,7 +39,3 @@ everybody.codes/
 └── data/            # Shared input data and examples
     └── dayXX_*.txt  # Example and actual puzzle inputs
 ```
-
-## License
-
-MIT License - see [LICENSE](LICENSE) file for details.

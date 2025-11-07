@@ -23,6 +23,7 @@ build/
 # OS
 .DS_Store
 Thumbs.db
+
 /data
 /python/requirements-local.in
 /python/requirements-local.txt
