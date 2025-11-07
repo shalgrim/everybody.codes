@@ -1,5 +1,6 @@
 import pytest
-from y2025.d01_1 import main
+from y2025.d01_1 import main as main1
+from y2025.d01_2 import main as main2
 
 
 @pytest.fixture
@@ -9,4 +10,8 @@ def day01_example_file_lines():
 
 
 def test_part1(day01_example_file_lines):
-    assert main(day01_example_file_lines) == "Fyrryn"
+    assert main1(day01_example_file_lines) == "Fyrryn"
+
+
+def test_part2(day01_example_file_lines):
+    assert main2(day01_example_file_lines) == "Elarzris"
