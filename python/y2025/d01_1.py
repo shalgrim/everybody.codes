@@ -1,3 +1,5 @@
+from coding_puzzle_tools import read_input
+
 def main(lines):
     names = lines[0].split(",")
     directions = lines[2].split(",")
@@ -10,3 +12,6 @@ def main(lines):
             index = max(0, index - int(direction[1]))
 
     return names[index]
+
+if __name__ == '__main__':
+    print(read_input())

@@ -1,6 +1,6 @@
 import pytest
 
-from day01_1 import main
+from y2025.d01_1 import main
 
 @pytest.fixture
 def day01_example_file_lines():
