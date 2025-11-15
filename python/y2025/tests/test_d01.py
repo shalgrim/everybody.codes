@@ -11,13 +11,20 @@ def day01_example_file_lines():
 
 
 @pytest.fixture
+def day01_part1_lines():
+    with open("data/2025/input01.txt") as f:
+        return [line.strip() for line in f.readlines()]
+
+
+@pytest.fixture
 def day01_example_3_file_lines():
     with open("data/2025/test01_3.txt") as f:
         return [line.strip() for line in f.readlines()]
 
 
-def test_part1(day01_example_file_lines):
+def test_part1(day01_example_file_lines, day01_part1_lines):
     assert main1(day01_example_file_lines) == "Fyrryn"
+    assert main1(day01_part1_lines) == "Xyrmal"
 
 
 def test_part2(day01_example_file_lines):
