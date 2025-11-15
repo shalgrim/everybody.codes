@@ -1,5 +1,3 @@
-
-
 def main(lines):
     names = lines[0].split(",")
     num_names = len(names)
@@ -14,7 +12,7 @@ def main(lines):
             if distance <= index:
                 index -= distance
             else:
-                # TODO: fix assumption that it would never loop around more than once
+                # Assumption: it won't loop around more than once
                 remainder = distance - index
                 index = num_names - remainder
 
