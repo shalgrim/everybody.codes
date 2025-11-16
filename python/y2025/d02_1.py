@@ -5,7 +5,7 @@ from coding_puzzle_tools import InputMode, read_input
 
 
 def parse_from_input(text: str) -> Tuple[int, int]:
-    pattern = re.compile(r"(?P<x>\d+),(?P<y>\d+)")
+    pattern = re.compile(r"(?P<x>-?\d+),(?P<y>-?\d+)")
     match = re.search(pattern, text)
     x = int(match.group("x"))
     y = int(match.group("y"))
